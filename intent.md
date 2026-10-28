@@ -38,7 +38,10 @@ portal to view their results. Doctors control review and release. Support keeps
 status-only calls distinct from clinical questions. Product and privacy own the
 channel decision; clinical and privacy own referring-doctor recipient authorization.
 Engineering confirms that the existing portal path is adequate.
-The approved scope uses the existing portal result route, prevents duplicate
+Affected systems are the existing authenticated portal and its result route, the
+doctor review-and-release step that gates eligibility, the notification delivery
+path, and the notification and operational logs, which must stay free of
+clinical content. The approved scope uses the existing portal result route, prevents duplicate
 notifications for the same released result version, and handles delivery failures
 without duplicate patient messages.
 Source: [approved PRD](inputs/01-approved-prd.md) and
